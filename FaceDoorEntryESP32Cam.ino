@@ -327,7 +327,6 @@ void loop() {
           if (g_state == START_RECOGNITION  && (st_face_list.count > 0))
           {
             face_id_node *f = recognize_face_with_name(&st_face_list, out_res.face_id);
-            Serial.println(f->id_name);
             if (f)
             {
               char recognised_message[64];
